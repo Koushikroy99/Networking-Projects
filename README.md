@@ -24,7 +24,7 @@ Welcome to my Networking Projects Repository! Here, you will find real-world Cis
 </p>
 
 
-### [3. University Campus Network Design & Implementation](./3.%20Routing%20Lab%20(RIP).pkt)
+### [3. University Campus Network Design & Implementation](./University%20Campus%20Network%20Design%20%26%20Implementation)
 
 <p align="center">
     <img src="./assets/University Campus Network Design & Implementation.png" alt="University Campus Network Design & Implementation">
