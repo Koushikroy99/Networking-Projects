@@ -9,7 +9,7 @@
 
 ## Networking Labs
 
-### [1. Network Design for ACCOUNTS & DELIVERY Departments](1.%20Accounts%20%26Delivery%20Lab.png)
+### [1. Network Design for ACCOUNTS & DELIVERY Departments](./ACCOUNTS%20%26%20DELIVERY.pkt)
 
 <p align="center">
     <img src="./assets/1. Accounts &Delivery Lab.png" alt="ACCOUNTS & DELIVERY">
