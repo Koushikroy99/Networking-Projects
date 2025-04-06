@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./Untitled design (2).png" alt="Logo" width="200">
+    <img src="./cisco-logo.png" alt="Logo" width="200">
 </p>
 
 <h2 align="center"> NETWORKING PROJECTS</h2>
@@ -130,5 +130,6 @@ Router(config)# exit
 ```bash
 PC1 > ping 192.168.40.11      # Test between PCs in Accounts Department
 PC1 > ping 192.168.40.130     # Test communication with Delivery Department
+```
 
 ✅ Expected Result: All ping replies should be successfully received. This confirms that inter-department communication is functional and the network is properly configured.
