@@ -12,7 +12,7 @@
 ### [1. Network Design for ACCOUNTS & DELIVERY Departments](1.%20Accounts%20%26Delivery%20Lab.png)
 
 <p align="center">
-    <img src="./assets/1. Accounts &Delivery Lab.png" alt="1. Accounts & Delivery Lab">
+    <img src="./assets/1. Accounts &Delivery Lab.png" alt="ACCOUNTS & DELIVERY">
 </p>
 
 1. Designed and implemented a network in Cisco Packet Tracer connecting two departments.
