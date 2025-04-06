@@ -10,7 +10,7 @@ Welcome to my Networking Projects Repository! Here, you will find real-world Cis
 
 ## Networking Labs
 
-### [1. Network Design for ACCOUNTS & DELIVERY Departments](.ACCOUNTS%20%26%20DELIVERY)
+### [1. Network Design for ACCOUNTS & DELIVERY Departments](./ACCOUNTS%20%26%20DELIVERY)
 
 <p align="center">
     <img src="./assets/1. Accounts &Delivery Lab.png" alt="ACCOUNTS & DELIVERY">
