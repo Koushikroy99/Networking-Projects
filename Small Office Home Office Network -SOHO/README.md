@@ -1,3 +1,26 @@
+<p align="center">
+    <img src="./cisco-logo.png" alt="Logo" width="200">
+</p>
+
+<h2 align="center"> NETWORKING PROJECTS</h2>
+
+## About this project
+
+This repository contains a collection of networking labs and simulation projects created using Cisco Packet Tracer. These labs demonstrate real-world scenarios in networking, including VLAN setup, Inter-VLAN routing, DHCP configuration, and wireless setup. In this particular project, we have designed a Small Office/Home Office (SOHO) network that includes wired and wireless connectivity for multiple departments, secure VLAN-based segmentation, and centralized IP management using DHCP.
+
+## Networking Labs
+
+### 1. Small Office Home Office Network - SOHO
+
+<p align="center">
+    <img src="./1. Accounts &Delivery Lab.png" alt="ACCOUNTS & DELIVERY">
+</p>
+
+<details>
+<summary><strong>⚙️ Steps to Configure the Network (Accounts & Delivery Departments)</strong></summary>
+
+<br>
+
 ## 🏢 JMD Agro Foods Pvt. Ltd. – Branch Office SOHO Network Design & Implementation
 
 ### 📍 Location: Bonalbo Village, West Bengal, India
@@ -138,30 +161,30 @@ Router(dhcp-config)# network 192.168.1.64 255.255.255.224
 Router(dhcp-config)# default-router 192.168.1.65
 ```
 ---
-### 📶 Wireless Network (WLAN) Setup – SOHO Wi-Fi
+### 📡 Wireless Access Points Configuration
 
-| VLAN | SSID                | VLAN ID |
-|------|---------------------|---------|
-| 10   | JMD_Admin_WiFi      | 10      |
-| 20   | JMD_Finance_WiFi    | 20      |
-| 30   | JMD_Customer_WiFi   | 30      |
----
-All Cisco Access Points are configured for multi-VLAN support, connected through trunk ports, and mapped to relevant SSIDs.
+Each Access Point should be configured with the following details for respective departments:
 
-### ✅ Network Testing & Verification (SOHO Validation)
-✅ Ping successful between VLANs
-✅ DHCP working for all VLANs
-✅ Wireless SSIDs connected and tested
-✅ VLANs and Inter-VLAN routing verified
-✅ End-to-end connectivity achieved
+| VLAN | Department                | SSID                | VLAN ID | Security Type | Password       |
+|------|---------------------------|---------------------|---------|----------------|----------------|
+| 10   | Admin / IT                | JMD_Admin_WiFi      | 10      | WPA2-PSK       | admin@123      |
+| 20   | Finance / HR              | JMD_Finance_WiFi    | 20      | WPA2-PSK       | finance@123    |
+| 30   | Customer Service / Front  | JMD_Customer_WiFi   | 30      | WPA2-PSK       | customer@123   |
 
-### 🏁 Final Outcome – SOHO Network Success
-The SOHO network for JMD Agro Foods Pvt. Ltd. (Bonalbo Branch):
+#### 🔧 Example Configuration (GUI - Cisco Packet Tracer)
 
-✅ Isolated departments using VLANs
-✅ Provides automated IP assignment
-✅ Enables wireless access for all users
-✅ Allows secure inter-department communication
-✅ Designed for small business scalability and growth
+1. Click the Access Point  
+2. Go to the **Wireless** tab  
+3. Add new SSID Name (e.g., `JMD_Admin_WiFi`)  
+4. Enable **Broadcast SSID**  
+5. Assign VLAN ID (e.g., `10`)  
+6. Set Authentication to **WPA2-PSK**  
+7. Enter Passphrase (e.g., `admin@123`)  
+8. Repeat for VLAN 20 and VLAN 30 with their corresponding SSIDs and VLAN IDs  
 
-📘 This real-world SOHO implementation showcases the essential skills in networking, including VLANs, DHCP, wireless setup, and router configuration, tailored for small office environments in India.
+#### 🧪 Testing Wireless Configuration
+
+- Connect a wireless laptop or PC to each SSID.  
+- Verify IP assignment using `ipconfig` (should match the subnet for its VLAN).  
+- Ping default gateway (e.g., `192.168.1.1` for Admin).  
+- Test internet access or inter-VLAN connectivity if permitted.
