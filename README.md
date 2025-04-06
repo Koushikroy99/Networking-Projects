@@ -4,9 +4,6 @@
 
 <h2 align="center"> NETWORKING PROJECTS</h2>
 
-- Cisco Packet Tracer
-- Version: 8.0.1.0064
-
 ## Networking Labs
 
 ### [1. Network Design for ACCOUNTS & DELIVERY Departments](./ACCOUNTS%20%26%20DELIVERY.pkt)
