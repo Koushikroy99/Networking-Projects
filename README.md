@@ -4,7 +4,7 @@
 
 <h2 align="center"> NETWORKING PROJECTS</h2>
 
-## About this project
+## 📝 About this project
 
 Welcome to my Networking Projects Repository! Here, you will find real-world Cisco Packet Tracer labs demonstrating subnetting, IP configuration, router and switch setup, and more. Perfect for networking enthusiasts.
 
