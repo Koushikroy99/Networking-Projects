@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./assets/Untitled design (2).png" alt="Logo" width="200">
+    <img src="./Untitled design (2).png" alt="Logo" width="200">
 </p>
 
 <h2 align="center"> NETWORKING PROJECTS</h2>
@@ -13,7 +13,7 @@ In this project, we are configuring a network for two departments — Accounts a
 ### [1. Network Design for ACCOUNTS & DELIVERY Departments](./ACCOUNTS%20%26%20DELIVERY/ACCOUNTS%20%26%20DELIVERY.pkt)
 
 <p align="center">
-    <img src="./assets/1. Accounts &Delivery Lab.png" alt="ACCOUNTS & DELIVERY">
+    <img src="./1. Accounts &Delivery Lab.png" alt="ACCOUNTS & DELIVERY">
 </p>
 
 <details>
