@@ -4,7 +4,7 @@
 
 <h2 align="center"> NETWORKING PROJECTS</h2>
 
-## About this project
+## 📝 About this project
 
 This repository contains a collection of networking labs and simulation projects created using Cisco Packet Tracer. These labs demonstrate real-world scenarios in networking, including VLAN setup, Inter-VLAN routing, DHCP configuration, and wireless setup. In this particular project, we have designed a Small Office/Home Office (SOHO) network that includes wired and wireless connectivity for multiple departments, secure VLAN-based segmentation, and centralized IP management using DHCP.
 
