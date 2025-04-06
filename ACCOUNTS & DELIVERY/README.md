@@ -10,7 +10,7 @@ In this project, we are configuring a network for two departments — Accounts a
 
 ## Networking Labs
 
-### [1. Network Design for ACCOUNTS & DELIVERY Departments](./ACCOUNTS%20%26%20DELIVERY/ACCOUNTS%20%26%20DELIVERY.pkt)
+### [1. Network Design for ACCOUNTS & DELIVERY Departments](./ACCOUNTS & DELIVERY/ACCOUNTS & DELIVERY.pkt)
 
 <p align="center">
     <img src="./1. Accounts &Delivery Lab.png" alt="ACCOUNTS & DELIVERY">
