@@ -86,6 +86,93 @@ Each VLAN represents a separate subnet:
 - **Tested Connectivity** via ping, traceroute, and console access
 
 ---
+## 📡 IP Addressing Scheme (VLAN Subnets)
+
+| VLAN Name       | VLAN ID | Subnet          | Default Gateway IP |
+|-----------------|---------|------------------|---------------------|
+| Management      | 10      | 10.0.10.0/24     | 10.0.10.1           |
+| HR              | 20      | 10.0.20.0/24     | 10.0.20.1           |
+| Finance         | 30      | 10.0.30.0/24     | 10.0.30.1           |
+| Business        | 40      | 10.0.40.0/24     | 10.0.40.1           |
+| Engineering     | 50      | 10.0.50.0/24     | 10.0.50.1           |
+| Art & Design    | 60      | 10.0.60.0/24     | 10.0.60.1           |
+| Student Labs    | 70      | 10.0.70.0/24     | 10.0.70.1           |
+| IT Department   | 80      | 10.0.80.0/24     | 10.0.80.1           |
+| Health Staff    | 90      | 10.0.90.0/24     | 10.0.90.1           |
+| Health Students | 100     | 10.0.100.0/24    | 10.0.100.1          |
+
+---
+
+## 🛠️ Step-by-Step Configuration Guide
+
+### 🔹 VLAN Configuration
+
+```bash
+Switch> enable
+Switch# configure terminal
+Switch(config)# vlan 10
+Switch(config-vlan)# name Management
+Switch(config)# vlan 20
+Switch(config-vlan)# name HR
+...
+Switch(config)# exit
+Switch(config)# interface range fa0/1 - 5
+Switch(config-if-range)# switchport mode access
+Switch(config-if-range)# switchport access vlan 10
+Switch(config)# ...
+```
+### 🔹 Inter-VLAN Routing (Router-on-a-Stick)
+```bash
+Router> enable
+Router# configure terminal
+Router(config)# interface g0/0.10
+Router(config-subif)# encapsulation dot1Q 10
+Router(config-subif)# ip address 10.0.10.1 255.255.255.0
+...
+```
+Repeat for all VLANs: g0/0.20, g0/0.30, etc.
+
+### 🔹 DHCP Configuration on Router
+```bash
+Router(config)# ip dhcp excluded-address 10.0.10.1 10.0.10.10
+Router(config)# ip dhcp pool Management
+Router(dhcp-config)# network 10.0.10.0 255.255.255.0
+Router(dhcp-config)# default-router 10.0.10.1
+...
+```
+Repeat for all VLANs.
+
+### 🔹 RIP v2 Routing
+```bash
+Router(config)# router rip
+Router(config-router)# version 2
+Router(config-router)# no auto-summary
+Router(config-router)# network 10.0.0.0
+```
+### 🔹 Static Route to Cloud Email Server
+```bash
+Router(config)# ip route 172.16.0.0 255.255.0.0 192.168.1.2
+```
+## 🔐 Security Configuration
+### SSH Access on Switches
+```bash
+Switch(config)# hostname SW1
+Switch(config)# ip domain-name abcuniversity.edu
+Switch(config)# crypto key generate rsa
+Switch(config)# username admin privilege 15 secret cisco123
+Switch(config)# line vty 0 4
+Switch(config-line)# login local
+Switch(config-line)# transport input ssh
+```
+### Port Security
+```bash
+Switch(config)# interface fa0/2
+Switch(config-if)# switchport mode access
+Switch(config-if)# switchport port-security
+Switch(config-if)# switchport port-security maximum 1
+Switch(config-if)# switchport port-security violation restrict
+Switch(config-if)# switchport port-security mac-address sticky
+```
 
 ## 🧪 Testing & Verification
 
@@ -100,6 +187,3 @@ Each VLAN represents a separate subnet:
 | Check Port Security            | `show port-security`          |
 
 ---
-
-## 🗂 File Structure
-
