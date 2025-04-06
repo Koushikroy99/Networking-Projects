@@ -13,7 +13,7 @@ This repository contains a collection of networking labs and simulation projects
 ### 1. Small Office Home Office Network - SOHO
 
 <p align="center">
-    <img src="./1. Accounts &Delivery Lab.png" alt="ACCOUNTS & DELIVERY">
+    <img src="./Small Office Home Office Network -SOHO.png" alt="Small Office Home Office Network -SOHO">
 </p>
 
 <details>
