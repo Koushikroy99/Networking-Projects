@@ -4,7 +4,7 @@
 
 <h2 align="center"> NETWORKING PROJECTS</h2>
 
-## About this project
+## 📝About this project
 
 In this project, we are configuring a network for two departments — Accounts and Delivery. The network is divided using subnetting, and communication is established through proper IP addressing and physical connections.
 
