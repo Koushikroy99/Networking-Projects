@@ -91,6 +91,7 @@ Router(config-if)# no shutdown
 Router(config-if)# exit
 
 Router(config)# exit
+```
 
 ### 💻 3. Configure IPs on Each PC
 
