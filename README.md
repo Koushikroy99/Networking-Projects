@@ -17,7 +17,7 @@ Welcome to my Networking Projects Repository! Here, you will find real-world Cis
 </p>
 
 
-### [2. Small Office Home Office Network Design & Implementation](./Small Office Home Office Network -SOHO)
+### [2. Small Office Home Office Network Design & Implementation](./Small%20Office%20Home%20Office%20Network%20-SOHO)
 
 <p align="center">
     <img src="./assets/Small Office Home Office Network -SOHO.png" alt="Small Office Home Office Network -SOHO">
