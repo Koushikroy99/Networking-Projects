@@ -109,3 +109,59 @@ Switch(config-if-range)# switchport access vlan 30
 Switch(config)# interface fa0/24
 Switch(config-if)# switchport mode trunk
 ```
+### 🖧 Router Configuration for Inter-VLAN Routing
+```bash
+Router(config)# interface gig0/0.10
+Router(config-subif)# encapsulation dot1Q 10
+Router(config-subif)# ip address 192.168.1.1 255.255.255.224
+
+Router(config)# interface gig0/0.20
+Router(config-subif)# encapsulation dot1Q 20
+Router(config-subif)# ip address 192.168.1.33 255.255.255.224
+
+Router(config)# interface gig0/0.30
+Router(config-subif)# encapsulation dot1Q 30
+Router(config-subif)# ip address 192.168.1.65 255.255.255.224
+```
+### DHCP Configuration
+```bash
+Router(config)# ip dhcp pool VLAN10
+Router(dhcp-config)# network 192.168.1.0 255.255.255.224
+Router(dhcp-config)# default-router 192.168.1.1
+
+Router(config)# ip dhcp pool VLAN20
+Router(dhcp-config)# network 192.168.1.32 255.255.255.224
+Router(dhcp-config)# default-router 192.168.1.33
+
+Router(config)# ip dhcp pool VLAN30
+Router(dhcp-config)# network 192.168.1.64 255.255.255.224
+Router(dhcp-config)# default-router 192.168.1.65
+```
+---
+### 📶 Wireless Network (WLAN) Setup – SOHO Wi-Fi
+
+| VLAN | SSID                | VLAN ID |
+|------|---------------------|---------|
+| 10   | JMD_Admin_WiFi      | 10      |
+| 20   | JMD_Finance_WiFi    | 20      |
+| 30   | JMD_Customer_WiFi   | 30      |
+---
+All Cisco Access Points are configured for multi-VLAN support, connected through trunk ports, and mapped to relevant SSIDs.
+
+### ✅ Network Testing & Verification (SOHO Validation)
+✅ Ping successful between VLANs
+✅ DHCP working for all VLANs
+✅ Wireless SSIDs connected and tested
+✅ VLANs and Inter-VLAN routing verified
+✅ End-to-end connectivity achieved
+
+### 🏁 Final Outcome – SOHO Network Success
+The SOHO network for JMD Agro Foods Pvt. Ltd. (Bonalbo Branch):
+
+✅ Isolated departments using VLANs
+✅ Provides automated IP assignment
+✅ Enables wireless access for all users
+✅ Allows secure inter-department communication
+✅ Designed for small business scalability and growth
+
+📘 This real-world SOHO implementation showcases the essential skills in networking, including VLANs, DHCP, wireless setup, and router configuration, tailored for small office environments in India.
