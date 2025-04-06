@@ -17,7 +17,7 @@ This repository contains a collection of networking labs and simulation projects
 </p>
 
 <details>
-<summary><strong>⚙️ Steps to Configure the Network (Accounts & Delivery Departments)</strong></summary>
+<summary><strong>⚙️ Steps to Configure the Network (Small Office Home Office Network - SOHO)</strong></summary>
 
 <br>
 
