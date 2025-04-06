@@ -1,10 +1,24 @@
-# 🎓 Campus Network Design & Implementation Project – ABC University
+<p align="center">
+    <img src="./cisco-logo.png" alt="Logo" width="200">
+</p>
+
+<h2 align="center"> NETWORKING PROJECTS</h2>
 
 ## 📝 About this Project
 
 This project showcases the full design and implementation of a campus-wide network for **ABC University**, which has **two campuses** located 20 miles apart. The goal is to ensure reliable, scalable, and secure communication across all departments, faculties, and remote campuses using **Cisco Packet Tracer**.
 
----
+## Networking Labs
+
+### 3. 🎓 Campus Network Design & Implementation Project – ABC University
+<p align="center">
+    <img src="./University Campus Network Design & Implementation.png" alt="University Campus Network Design & Implementation">
+</p>
+
+<details>
+<summary><strong>⚙️ Steps to Configure the Network (Small Office Home Office Network - SOHO)</strong></summary>
+
+<br>
 
 ## 🏫 Network Overview
 
