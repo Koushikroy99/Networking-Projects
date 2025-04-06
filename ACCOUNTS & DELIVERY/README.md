@@ -6,7 +6,7 @@
 
 ## About this project
 
-Welcome to my Networking Projects Repository! Here, you will find real-world Cisco Packet Tracer labs demonstrating subnetting, IP configuration, router and switch setup, and more. Perfect for students and networking enthusiasts.
+In this project, we are configuring a network for two departments — Accounts and Delivery. The network is divided using subnetting, and communication is established through proper IP addressing and physical connections.
 
 ## Networking Labs
 
