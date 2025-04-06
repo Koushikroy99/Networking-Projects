@@ -30,7 +30,6 @@ Welcome to my Networking Projects Repository! Here, you will find real-world Cis
     <img src="./assets/University Campus Network Design & Implementation.png" alt="University Campus Network Design & Implementation">
 </p>
 
-### [CCNA Projects](.main/README.md)
 ## About Me
 
 - **Koushik Roy**  
