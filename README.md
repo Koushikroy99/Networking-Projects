@@ -92,7 +92,7 @@ Router(config-if)# exit
 
 Router(config)# exit
 
-## 💻 3. Configure IPs on Each PC
+### 💻 3. Configure IPs on Each PC
 
 ➡️ Navigate to: `PC > Desktop > IP Configuration` and manually assign IP addresses as follows:
 
