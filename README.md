@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./assets/cisco-logo.png" alt="Logo" width="200">
+    <img src="./assets/Untitled design (2).png" alt="Logo" width="200">
 </p>
 
 <h2 align="center"> NETWORKING PROJECTS</h2>
