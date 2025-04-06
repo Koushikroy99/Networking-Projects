@@ -9,10 +9,10 @@
 
 ## Networking Labs
 
-### [1. Network Design for ACCOUNTS & DELIVERY Departments](./1.%20Vlan%20Lab.pkt)
+### [1. Network Design for ACCOUNTS & DELIVERY Departments](1.%20Accounts%20%26Delivery%20Lab.png)
 
 <p align="center">
-    <img src="./assets/1. Vlan Lab.png" alt="VLAN Lab">
+    <img src="./assets/1. Vlan Lab.png" alt="">
 </p>
 
 1. Designed and implemented a network in Cisco Packet Tracer connecting two departments.
