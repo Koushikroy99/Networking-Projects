@@ -25,7 +25,6 @@ In this project, we are configuring a network for two departments — Accounts a
 - **1 Router** (using GigabitEthernet0/0 and GigabitEthernet0/1)
 - **2 Switches** (one for each department)
 - **4 PCs** (2 in Accounts, 2 in Delivery)
-- **No printers used**
 - **Copper Straight-Through Cables** used for all connections
 
 ---
